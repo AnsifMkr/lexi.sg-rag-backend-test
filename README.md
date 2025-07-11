@@ -20,7 +20,7 @@ git clone https://github.com/AnsifMkr/lexi.sg-rag-backend-test.git
 cd lexi.sg-rag-backend-test
 
 # (Optional) Setup virtual environment
-python3 -m venv venv
+python -m venv venv
 source venv/bin/activate
 
 # Install dependencies
@@ -33,8 +33,8 @@ uvicorn app.main:app --reload
 ```
 
 ### API 
-</br>
 GET http://127.0.0.1:8000/
+
 ```
 {
   "message": "Welcome to the RAG API. Use the /query endpoint to ask questions."
